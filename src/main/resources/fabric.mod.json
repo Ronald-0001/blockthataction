@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "blockthataction",
+	"version": "${version}",
+	"name": "BlockThatAction",
+	"description": "I got annoyed by the blocks in the Conquest mod not being able to lock block state!",
+	"authors": [
+		"MaoLMFAO!"
+	],
+	"contact": {
+		"homepage": "https://'not-yet-implemented'.net/",
+		"sources": "https://github.com/FabricMC/'not-yet-uploaded'"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/blockthataction/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mao.blockthataction.BlockThatAction"
+		],
+		"fabric-datagen": [
+			"net.mao.blockthataction.BlockThatActionDataGenerator"
+		],
+		"client": [
+			"net.mao.blockthataction.BlockThatActionClient"
+		]
+	},
+	"mixins": [
+		"blockthataction.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
