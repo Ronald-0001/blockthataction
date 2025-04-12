@@ -1,0 +1,12 @@
+{
+  "interactable_tools": [
+    "minecraft:stick",
+    "minecraft:dirt"
+  ],
+  "restricted_blocks": [
+    "minecraft:chest",
+    "minecraft:crafting_table",
+    "conquest:steel_beam_vertical",
+    "conquest:dark_limestone_smooth_gothic_arch"
+  ]
+}

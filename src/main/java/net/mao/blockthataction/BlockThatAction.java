@@ -2,6 +2,8 @@ package net.mao.blockthataction;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.mao.blockthataction.config.ModConfig;
+import net.mao.blockthataction.handler.ClickHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,5 +22,7 @@ public class BlockThatAction implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModConfig.load();
+		ClickHandler.register();
 	}
 }
